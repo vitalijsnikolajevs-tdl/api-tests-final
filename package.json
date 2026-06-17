@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "user": "mocha 'tests/scenarios/user/*.js' --reporter mochawesome --timeout 20000 user",
+    "user": "mocha 'tests/scenarios/user/*.js' --reporter mochawesome --timeout 20000 STG",
     "BOOKS": "mocha 'tests/scenarios/books/*.js' --reporter mochawesome --timeout 20000 books",
-    "greetings": "mocha 'tests/scenarios/greetings/*.js' --reporter mochawesome --timeout 20000 greetings"
+    "greetings-dev": "mocha 'tests/scenarios/greetings/*.js' --reporter mochawesome --timeout 20000 greetings_dev",
+    "greetings-stg": "mocha 'tests/scenarios/greetings/*.js' --reporter mochawesome --timeout 20000 greetings_stg",
+    "greetings-prod": "mocha 'tests/scenarios/greetings/*.js' --reporter mochawesome --timeout 20000 greetings_prod"
   },
   "author": "Aleksejs Levenciks",
   "license": "ISC",
